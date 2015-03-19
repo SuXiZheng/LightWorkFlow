@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sago.Framework.WorkFlow.Entities
+namespace Sago.Framework.Workflow.Core
 {
-	public enum ProcessAction
+	public static class Global
 	{
-		Approval = 0
 	}
 }

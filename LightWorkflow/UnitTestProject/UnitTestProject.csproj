@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47B89DA9-7A00-4D7B-870C-2E2AC70C8593}</ProjectGuid>
+    <ProjectGuid>{7983709E-0155-45E1-A373-B59B54A67DAF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTestProject</RootNamespace>
@@ -35,7 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,18 +57,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ProcessNodes\PaymentInternalNode.cs" />
-    <Compile Include="ProcessNodes\PaymentStartNode.cs" />
-    <Compile Include="ProcessNodes\PaymentUploadFilesNode.cs" />
-    <Compile Include="Process\PaymentProcess.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ProcessNodeInstanceContextTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sago.WorkFlow\Sago.Framework.WorkFlow.csproj">
-      <Project>{b200a691-6632-4f3b-a2ef-ed9bfe841d5a}</Project>
-      <Name>Sago.Framework.WorkFlow</Name>
-    </ProjectReference>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

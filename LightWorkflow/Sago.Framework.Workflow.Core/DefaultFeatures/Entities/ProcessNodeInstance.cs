@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sago.Framework.WorkFlow.Helper
+namespace Sago.Framework.Workflow.Core.DefaultFeatures.Entities
 {
-	internal class BizContextHelper
+	public class ProcessNodeInstance
 	{
-
 	}
 }

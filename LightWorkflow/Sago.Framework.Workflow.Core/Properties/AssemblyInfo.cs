@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sago.WorkFlow")]
+[assembly: AssemblyTitle("Sago.Framework.Workflow.Core")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Sago.WorkFlow")]
+[assembly: AssemblyProduct("Sago.Framework.Workflow.Core")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("534f71e3-fb8d-4224-8e59-4a2c99d17b05")]
+[assembly: Guid("f63d2dee-bd5d-4875-84ac-689ee009989f")]
 
 // Version information for an assembly consists of the following four values:
 //

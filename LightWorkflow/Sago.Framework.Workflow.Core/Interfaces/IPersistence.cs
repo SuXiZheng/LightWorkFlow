@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sago.Framework.WorkFlow.Entities
+namespace Sago.Framework.Workflow.Core.Interfaces
 {
-	public class ProcessNodeEventArgs : EventArgs
+	public interface IPersistence
 	{
 	}
 }
