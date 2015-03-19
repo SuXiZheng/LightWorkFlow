@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sago.Framework.WorkFlow.Entities
 {
-	public class Linkage
+	public enum Action
 	{
-		public Guid ID { get; set; }
-
-
+		Approve = 1,
+		Return = 2
 	}
 }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Sago.Framework.WorkFlow.Entities
 {
-	public class Linkage
+	public class ToDoWork
 	{
-		public Guid ID { get; set; }
+		public Action Action { get; set; }
 
-
+		public ProcessNodeInstance ProcessNodeInstance { get; set; }
 	}
 }

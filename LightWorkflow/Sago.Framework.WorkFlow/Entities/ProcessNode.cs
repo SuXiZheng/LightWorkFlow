@@ -8,7 +8,10 @@ namespace Sago.Framework.WorkFlow.Entities
 {
 	public class ProcessNode
 	{
-		public ICollection<Linkage> Linkages { get; set; }
+		public bool IsCounterSignature { get; set; }
 
+		public bool IsMultipleApproval { get; set; }
+
+		public ICollection<Linkage> Linkages { get; set; }
 	}
 }

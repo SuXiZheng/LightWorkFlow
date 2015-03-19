@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Sago.Framework.WorkFlow.Entities
 {
-	public class Linkage
+	public enum NodeStatus
 	{
-		public Guid ID { get; set; }
-
-
+		Executing = 1,
+		Finished = 2
 	}
 }

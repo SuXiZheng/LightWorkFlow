@@ -39,13 +39,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Core\WorkFlowEngine.cs" />
+    <Compile Include="Entities\Action.cs" />
     <Compile Include="Entities\Linkage.cs" />
+    <Compile Include="Entities\NodeStatus.cs" />
     <Compile Include="Entities\Process.cs" />
     <Compile Include="Entities\ProcessInstance.cs" />
     <Compile Include="Entities\ProcessNode.cs" />
     <Compile Include="Entities\ProcessNodeInstance.cs" />
+    <Compile Include="Entities\ToDoWork.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="Hibernate\IHibernate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\StringToLambda\Common.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\ExpressionParser\ExpressionParserCore.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\ExpressionParser\ParserSyntaxErrorException.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\ExpressionParser\PriorityManager.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\ExpressionParser\ReadResult.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\ExpressionParser\TypeVariable.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\LambdaParser.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\StringParser\ParseException.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\StringParser\SymbolParser.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\StringParser\SymbolParseResult.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\StringParser\Token.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\StringParser\TokenId.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\TypeParser\ParseUnfindTypeException.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\TypeParser\TypeParser.cs" />
+    <Compile Include="Utilities\StringToLambda\Core\Utilities\EqualComparer.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

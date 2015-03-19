@@ -10,6 +10,8 @@ namespace Sago.Framework.WorkFlow.Entities
 	{
 		public Guid ID { get; set; }
 
+		public string ProcessCode { get; set; }
+
 		public string ProcessName { get; set; }
 
 		public string Description { get; set; }

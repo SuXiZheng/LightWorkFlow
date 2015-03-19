@@ -18,6 +18,9 @@ namespace Sago.Framework.WorkFlow.Hibernate
 
 		#region 关于ProcessNode操作
 		ProcessNode GetProcessNodeByProcessNodeID(Guid ProcessNodeID);
+
+		ICollection<ProcessNode> GetProcessNodesByProcessID(Guid processID);
+
 		#endregion
 
 		#region 关于ProcessInstance的操作
@@ -40,5 +43,6 @@ namespace Sago.Framework.WorkFlow.Hibernate
 
 		#endregion
 
+		User GetUserByUserID(Guid userID);
 	}
 }

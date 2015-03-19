@@ -8,6 +8,10 @@ namespace Sago.Framework.WorkFlow.Entities
 {
 	public class ProcessInstance
 	{
+		public Guid ID { get; set; }
+
+		public string ProcessInstanceName { get; set; }
+
 		public ICollection<ProcessNodeInstance> ProcessNodeInstances { get; set; }
 	}
 }
