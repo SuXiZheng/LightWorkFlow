@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A3412C1C-4D72-438B-AE76-8F21D3852533}</ProjectGuid>
+    <ProjectGuid>{5E28E662-4286-4FB4-8FC1-251286E56B22}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sago.Framework.Workflow.Core</RootNamespace>
-    <AssemblyName>Sago.Framework.Workflow.Core</AssemblyName>
+    <RootNamespace>Sago.Framework.WorkFlow</RootNamespace>
+    <AssemblyName>Sago.Framework.WorkFlow</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,14 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultFeatures\Entities\ProcessInstance.cs" />
-    <Compile Include="DefaultFeatures\Entities\ProcessNodeInstance.cs" />
-    <Compile Include="DefaultFeatures\WorkflowEngine.cs" />
-    <Compile Include="Global.cs" />
-    <Compile Include="Interfaces\IDataTransformer.cs" />
-    <Compile Include="Interfaces\IPersistence.cs" />
+    <Compile Include="Entities\Linkage.cs" />
+    <Compile Include="Entities\Process.cs" />
+    <Compile Include="Entities\ProcessInstance.cs" />
+    <Compile Include="Entities\ProcessNode.cs" />
+    <Compile Include="Entities\ProcessNodeInstance.cs" />
+    <Compile Include="Hibernate\IHibernate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

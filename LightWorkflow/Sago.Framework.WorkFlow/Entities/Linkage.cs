@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sago.Framework.Workflow.Core.Interfaces
+namespace Sago.Framework.WorkFlow.Entities
 {
-	public interface IPersistence
+	public class Linkage
 	{
 	}
 }

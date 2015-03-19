@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sago.Framework.Workflow.Core
+namespace Sago.Framework.WorkFlow.Entities
 {
-	public static class Global
+	public class ProcessNode
 	{
+		public ICollection<Linkage> Linkages { get; set; }
+
 	}
 }

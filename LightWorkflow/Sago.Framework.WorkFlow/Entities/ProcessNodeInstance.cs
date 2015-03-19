@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sago.Framework.Workflow.Core.DefaultFeatures.Entities
+namespace Sago.Framework.WorkFlow.Entities
 {
 	public class ProcessNodeInstance
 	{
