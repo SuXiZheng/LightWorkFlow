@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sago.Framework.WorkFlow", "Sago.Framework.WorkFlow\Sago.Framework.WorkFlow.csproj", "{5E28E662-4286-4FB4-8FC1-251286E56B22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{0A9E55CA-C5BF-4E43-88BA-AAE146472AEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5E28E662-4286-4FB4-8FC1-251286E56B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E28E662-4286-4FB4-8FC1-251286E56B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E28E662-4286-4FB4-8FC1-251286E56B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A9E55CA-C5BF-4E43-88BA-AAE146472AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A9E55CA-C5BF-4E43-88BA-AAE146472AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A9E55CA-C5BF-4E43-88BA-AAE146472AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A9E55CA-C5BF-4E43-88BA-AAE146472AEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\WorkFlowEngine.cs" />
+    <Compile Include="Core\WorkFlowEngineCore.cs" />
     <Compile Include="Entities\Action.cs" />
     <Compile Include="Entities\Linkage.cs" />
     <Compile Include="Entities\NodeStatus.cs" />

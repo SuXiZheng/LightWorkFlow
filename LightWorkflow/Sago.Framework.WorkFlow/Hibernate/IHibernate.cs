@@ -7,42 +7,50 @@ using Sago.Framework.WorkFlow.Entities;
 
 namespace Sago.Framework.WorkFlow.Hibernate
 {
-	/// <summary>
-	/// 数据持久化接口
-	/// </summary>
-	public interface IHibernate
-	{
-		#region 关于Process的操作
-		Process GetProcessByProcessID(Guid processID);
-		#endregion
+    /// <summary>
+    /// 数据持久化接口
+    /// </summary>
+    public interface IHibernate
+    {
+        #region 关于Process的操作
+        Process GetProcessByProcessID(Guid processID);
 
-		#region 关于ProcessNode操作
-		ProcessNode GetProcessNodeByProcessNodeID(Guid ProcessNodeID);
+        Process GetProcessByProcessCode(string processCode);
+        #endregion
 
-		ICollection<ProcessNode> GetProcessNodesByProcessID(Guid processID);
+        #region 关于ProcessNode操作
+        ProcessNode GetProcessNodeByProcessNodeID(Guid ProcessNodeID);
 
-		#endregion
+        ICollection<ProcessNode> GetProcessNodesByProcessID(Guid processID);
 
-		#region 关于ProcessInstance的操作
+        #endregion
 
-		ProcessInstance GetProcessInstanceByProcessInstanceID(Guid ProcessInstanceID);
+        #region 关于ProcessInstance的操作
 
-		object NewProcessInstance(ProcessInstance processInstance);
+        ProcessInstance GetProcessInstanceByProcessInstanceID(Guid ProcessInstanceID);
 
-		#endregion
+        object NewProcessInstance(ProcessInstance processInstance);
 
-		#region 关于ProcessNodeInstance的操作
+        #endregion
 
-		ProcessNodeInstance GetProcessNodeInstanceByProcessNodeInstanceID(Guid processNodeInstanceID);
+        #region 关于ProcessNodeInstance的操作
 
-		ICollection<ProcessNodeInstance> GetProcessNodeInstancesByProcessInstanceID(Guid processInstanceID);
+        ProcessNodeInstance GetProcessNodeInstanceByProcessNodeInstanceID(Guid processNodeInstanceID);
 
-		object NewProcessNodeInstance(ProcessNodeInstance processNodeInstance);
+        ICollection<ProcessNodeInstance> GetProcessNodeInstancesByProcessInstanceID(Guid processInstanceID);
 
-		object UpdateProcessNodeInstance(ProcessNodeInstance processNodeInstance);
+        object NewProcessNodeInstance(ProcessNodeInstance processNodeInstance);
 
-		#endregion
+        object UpdateProcessNodeInstance(ProcessNodeInstance processNodeInstance);
 
-		User GetUserByUserID(Guid userID);
-	}
+        #endregion
+
+        User GetUserByUserID(Guid userID);
+
+        object BuildToDo(Linkage linkage);
+
+        object CloseToDoWork(ToDoWork toDoWork);
+
+        ToDoWork GetToDoWork(Guid toDoWorkID);
+    }
 }
